@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hold_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1EA"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/hold_kicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.12"
+            android:text="HOLD"
+            android:textAllCaps="true"
+            android:textColor="#8A8175"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/hold_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Pause."
+            android:textColor="#1C1917"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hold_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Do you still want to open this?"
+            android:textColor="#44403C"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/hold_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="5"
+            android:textColor="#1C1917"
+            android:textSize="56sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hold_timer_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seconds"
+            android:textColor="#8A8175"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/hold_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#E7E5E4"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Type open"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:minHeight="56dp"
+            android:padding="14dp"
+            android:textColor="#1C1917"
+            android:textColorHint="#A8A29E"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/hold_keys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/hold_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#1C1917"
+            android:minHeight="52dp"
+            android:padding="16dp"
+            android:text="Go Home"
+            android:textAllCaps="false"
+            android:textColor="#F4F1EA" />
+
+        <Button
+            android:id="@+id/hold_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1C1917"
+            android:minHeight="52dp"
+            android:padding="16dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#F4F1EA"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
